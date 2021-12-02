@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Speda";
+    src: local("Speda"),     url(~assets/Speda.ttf) format("truetype");}
+
+html {
+    font-family: "Speda";
+}

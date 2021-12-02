@@ -1,0 +1,27 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+$body-font-family:'Speda', sans-serif !important;
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;700&display=swap');
+
+.v-application {
+    .text-h1,
+    .text-h2,
+    .text-h3,
+    .text-h4,
+    .text-h5,
+    .text-h6,
+    .text-headline,
+    .text-title,
+    .text-subtitle-1,
+    .text-subtitle-2,
+    .text-body-1,
+    .text-body-2,
+    .text-button,
+    .text-caption,
+    .text-overline {
+      font-family: $body-font-family !important;
+    }
+  }
