@@ -75,9 +75,9 @@
 
         </div>
         <div class="whitespace"></div>
-        <div class="symptoms">
-            <v-row align="center" justify="center">
-                <v-col cols="3" class="ma-4 py-4 px-2 elevation-1 d-flex flex-column align-center justify-center rounded-lg" v-for="sym,i in symptoms" :key="i">
+        <div class="symptoms " >
+            <v-row align="center" justify="center" >
+                <v-col lg="3" cols="8" class="text-center ma-4 py-4 px-2 elevation-1 d-flex flex-column align-center justify-center rounded-lg" v-for="sym,i in symptoms" :key="i">
                     <v-img :src="sym.icon" height="60" max-height="60" contain></v-img>
                     <div class="ma-3"></div>
                     <div class="text-span">
@@ -88,14 +88,14 @@
         </div>
         <div class="whitespace"></div>
         
-            <div class="find-hospitals">
+        <div class="find-hospitals">
                 <v-row no-gutters align="center" justify="center" class="fill-height">
                     <v-col cols="6" class="fill-height">
                         <v-img src="/hospital.jpg" height="100%"></v-img>
                     </v-col>
                     <v-col cols="6" class="fill-height d-flex align-center justify-center">
                         <v-row no-gutters align="center" justify="start" class="px-5">
-                            <v-col v-for="i in 3" :key="i" cols="5" class="ma-3">
+                            <v-col v-for="i in 4" :key="i" cols="5" class="ma-3">
                                 <v-card width="300" height="150">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12984.680271576131!2d45.4659816!3d35.5495018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53a6b8021f30f030!2sFaruk%20Medical%20City!5e0!3m2!1sen!2siq!4v1638566782817!5m2!1sen!2siq" height="150" width="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </v-card>
@@ -103,7 +103,7 @@
                         </v-row>
                     </v-col>
                 </v-row>
-            </div>
+        </div>
             
     </div>
 </template>
@@ -170,7 +170,8 @@ export default {
     }
 
     .symptoms {
-        height: 70vh;
+        min-height: 60vh;
+        max-height: 100%;
         width: 100%;
     }
     .find-hospitals {
