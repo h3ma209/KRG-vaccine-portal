@@ -1,5 +1,8 @@
 <template>
     <div class="page fill-height">
+        <div class="d-flex align-center justify-center" id="loader">
+            <v-img src="https://gov.krd/media/1099/govkrdlogobig.svg" height="200" max-width="200" contain class="mx-7"></v-img>
+        </div>
         <div class="landing">
             <v-row no-gutters class="fill-height" align="center" justify="center">
                 <v-col class="left fill-height d-none d-sm-block">
@@ -89,10 +92,10 @@
         <div class="whitespace"></div>
         <div class="find-hospitals ">
             <v-row no-gutters align="center" justify="center" class="fill-height">
-                <v-col cols="6"   class="fill-height d-none d-sm-block">
+                <v-col cols="6" class="fill-height d-none d-sm-block">
                     <v-img src="/hospital.jpg" height="95%"></v-img>
                 </v-col>
-                <v-col cols="6"  class="fill-height d-flex align-center justify-center ">
+                <v-col cols="6" class="fill-height d-flex align-center justify-center ">
                     <v-row no-gutters align="center" justify="start" class="px-5">
                         <v-col v-for="i in 4" :key="i" lg="5" cols="7" md="5" class="ma-3">
                             <v-card width="300" height="250">
@@ -109,6 +112,13 @@
 <script>
 
 export default {
+    mounted() {
+        let loader = document.getElementById('loader');
+        setInterval(() => {
+            loader.style.display = 'none'
+            loader.style.opacity = 0
+        },3000);
+    },
     components: {
 
     },
@@ -147,6 +157,16 @@ export default {
             // z-index: 2;
             // background: rgba($color: #000000, $alpha: 0.08);
         }
+    }
+    #loader {
+        background: white;
+        position: fixed;
+        display: initial;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
     }
     .about {
         height: 140vh;
