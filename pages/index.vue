@@ -1,7 +1,11 @@
 <template>
     <div class="page fill-height">
-        <div class="d-flex align-center justify-center" id="loader">
-            <v-img src="https://gov.krd/media/1099/govkrdlogobig.svg" height="200" max-width="200" contain class="mx-7"></v-img>
+        <div class="" id="loader">
+            <v-row align="center" justify="center" class="fill-height">
+                <v-col cols="2">
+                    <v-img src="https://gov.krd/media/1099/govkrdlogobig.svg" height="200" max-width="200" contain class="mx-7"></v-img>
+                </v-col>
+            </v-row>
         </div>
         <div class="landing">
             <v-row no-gutters class="fill-height" align="center" justify="center">
@@ -161,12 +165,12 @@ export default {
     #loader {
         background: white;
         position: fixed;
-        display: initial;
         z-index: 9999;
         top: 0;
         left: 0;
         height: 100vh;
         width: 100%;
+        
     }
     .about {
         height: 140vh;
