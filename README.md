@@ -18,5 +18,5 @@ $ npm run generate
 ```
 
 
-(https://github.com/h3ma209/KRG-vaccine-portal/blob/master/krg-portal-thumbnail.png?raw=true)
+![](https://github.com/h3ma209/KRG-vaccine-portal/blob/master/krg-portal-thumbnail.png?raw=true)
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
